@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Metadatos importantes para renderizar nuestra página-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasteleria: Muffin</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li> <a href="">Nosotros</a> </li>
-                <li> <a href="">Promociones</a> </li>
-                <li> <a href=""> Menu</a> </li>
-                <li> <a href="">Contacto</a> </li>
+    <header> <!--Esta es una etiqueta semántica de cabecera-->
+        <nav> <!--Barra de navegación-->
+            <ul> <!--Lista desordenada-->
+                <a href="">Nosotros.</a>
+                <a href="">Promociones</a>
+                <a href=""> Menu</a>
+                <a href="">Contacto</a>
             </ul>
         </nav>
     </header>
     
+    <!--Información principal de mi página-->
     <main>
-        <section>
-            <h1>Cafeteria Muffin</h1>
-        </section>        
+        <!--Sección sobre nosotros-->
+        <article>
+            <img src="logo cafeteria borcelle.jpg" alt="logo de la empresa" width="150" height="150">
+            <h1>Borcelle Cafetería y Pastelería</h1>
+            <p>Disfruta de un momento único en nuestra cafetería y pastelería, donde cada taza de café y pastel casero te ofrece un sabor incomparable. ¡Te esperamos para endulzar tu día!</p>
+        </article> 
         
+        <!--Sección de promociones-->
         <section>
-            <h2>Promociones</h2>
+            <h2>Promoción del mes</h2>
+            <ul>
+                <li><strong>2x1</strong> en galletas de jengibre</li>
+                <li><strong>Combo super muffin</strong> Café americano + Muffin por $100</li>
+                <li> 10% de descuento en pastelería de temporada</li>
+            </ul>
+        </section>
+
+        <!--Sección de menu-->
+        <section>
+            <h2>Menú de temporada</h2>
+            <!--Tarjeta de postre-->
+            <div>
+                <img src="https://www.hola.com/horizon/square/d4efbd72652a-troncos-navidad-t.jpg?im=Resize=(960),type=downsize" alt="Imagen de tronco navideño" width="500" height="500">
+            <h3>Tronco navideño</h3>
+            <p>Panqué de chocolate con licor de café y relleno de crema de café; cubierto con ganache de chocolate amargo.</p>
+            <p><strong>$350</strong></p>
+            <button>Agregar</button>
+            </div>
         </section>
 
         <section>
-            <h2>Menu</h2>
+            <!--Tarjeta de postre-->
+            <div>
+                <img src="https://images.rappi.com.mx/products/1680213458883_1680213445696_1680213445112.png?d=900x750&e=webp&q=30" alt="Imagen de tronco navideño" width="500" height="500">
+            <h3>Pastel 3 Leches de Piñon</h3>
+            <p>Pastel mojado con nuestra preparación de 3 leches. Cubierto de crema batida y piñon</p>
+            <p><strong>$540</strong></p>
+            <button>Agregar</button>
+            </div>
         </section>
 
         <section>
-            <h2>Contacto</h2>
+            <!--Tarjeta de postre-->
+            <div>
+                <img src="https://biopastis.com/wp-content/uploads/2023/11/Red-velvet-chocolate-02012189.jpg" alt="pastel red velvet" width="500" height="500">
+            <h3>Pastel Red Velvet</h3>
+            <p>Nuestro pastel red velvet esta elaborado con un pan suave de chocolate rojo, esponjoso y con un toque ligero de cacao.</p>
+            <p><strong>$520</strong></p>
+            <button>Agregar</button>
+            </div>
         </section>
 
     </main>
 
+<!--Pie de página-->
     <footer>
+        <!--sección de contacto-->
         <section>
-            <h2>Contacto</h2>
-            <p>Visitanos en nuestra sucursal...</p>
+            <h2>Contactános</h2></p>
+            <p></p>Permítenos ayudarte, envíanos mensaje y te contactaremos en breve.
 
             <form action="">
                 <label for="">Nombre completo</label>
@@ -48,12 +88,14 @@
                 <label for="">Celular</label>
                 <input type="number" placeholder="Deja tu whats">
 
+                <label for="">Mensaje</label>
+                <textarea name="text" cols="32" rows="8">Deja tu mensaje</textarea>
+
                 <label for="">Sabor del pastel</label>
                 <div>
-                    <label for=""><input type="radio">Chocolate</label>
-                    <label for=""><input type="radio">Vainilla</label>
-                    <label for=""><input type="radio">Red Velvet</label>
-                    <label for=""><input type="radio">3 leches</label>
+                    <label for=""><input type="radio">Tronco Navideño</label>
+                    <label for=""><input type="radio">Pastel Red Velvet</label>
+                    <label for=""><input type="radio">Pastel3 leches de piñon</label>
                 </div>
 
                 <label for="">Extras</label>
@@ -74,14 +116,25 @@
             </form>
         </section>
 
+        <!--sección de redes sociales-->
+        <section>
+            <h2>Síguenos para ver más</h2>
         <ul>
             <li><a href="">Facebook</a></li>
             <li><a href="">Instagram</a></li>
             <li><a href="https://www.tiktok.com/@laesquinitadelospasteles/video/7027167527822200070" target="_blank">TikTok</a></li>
             <li><a href="">Youtube</a></li>
         </ul>
+        </section>
 
-        <p>2025 Cafeteria Muffin - Todos los derechos reservados</p>
+        <section>
+            <h2>Contacto</h2>
+            <p>Teléfono +52 1 55 55 55 55</p>
+            <p>Correo: borcellecafe@gmail.com</p>
+            <p>Eugenia 43 Col. Nápoles</p>
+        </section>
+
+        <p>2025 Borcelle Cafetería y Pastelería - Todos los derechos reservados</p>
     </footer>
     
 
